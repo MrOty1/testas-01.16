@@ -1,0 +1,52 @@
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Verdana;
+    overflow-x: hidden;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+a{
+    color: white;
+    display: contents;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.mainpage{
+    background: purple;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.tab{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1vh 10vw;
+    margin-bottom: 1vh;
+    background: darkblue;
+    border: 5px solid black;
+    width: 100%;
+    height: 50%;
+}
+
+.tab .text{
+    width: 50%;
+    height: 50%;
+}
+
+.tab .img{
+    width: 50%;
+    height: 50%;
+    background: black;
+}
