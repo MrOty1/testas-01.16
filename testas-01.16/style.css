@@ -1,14 +1,23 @@
+:root{
+    --color1: rgb(0, 195, 255);
+    --color2: rgba(255, 255, 255, 1);
+}
+
 body{
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: Verdana;
+    font-family: Arial;
     overflow-x: hidden;
     text-align: center;
-    word-wrap: break-word;
-    font-size: 150%;
     margin: 0;
     padding: 0;
     color: white;
+}
+
+.mainpage{
+    backdrop-filter: blur(10px);
+    background: url(images/background.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 a{
@@ -20,33 +29,101 @@ a:hover{
     text-decoration: none;
 }
 
-.mainpage{
-    background: purple;
-}
-
-main{
-    width: 100vw;
-    height: 100vh;
-}
-
 .tab{
+    width: 75%;
     display: grid;
-    grid-template-columns: auto auto;
-    margin: 1vh 10vw;
-    margin-bottom: 1vh;
-    background: darkblue;
-    border: 5px solid black;
-    width: 100%;
-    height: 50%;
+    grid-template-columns: 50% 50%;
+    margin: 3vh auto;
+    background: rgba(255, 255, 255, 1);
+    font-size: 4vh;
+    border-radius: 5vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.1s;
+}
+
+.tab:hover{
+    padding: 1% 1%;
 }
 
 .tab .text{
-    width: 50%;
-    height: 50%;
+    text-shadow: 0 0 1vh black;
+    padding: 5vh 5vh;
+    color: white;
 }
 
-.tab .img{
+.one{
+    background: url(images/home/one.png);
+}
+
+.two{
+    background: url(images/home/two.png);
+}
+
+.three{
+    background: url(images/home/three.png);
+}
+
+.four{
+    background: url(images/home/four.png);
+}
+
+.five{
+    background: url(images/home/five.png);
+}
+
+.six{
+    background: url(images/home/six.png);
+}
+
+.seven{
+    background: url(images/home/seven.png);
+}
+
+.one, .two, .three, .four, .five, .six, .seven{
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header{
+    white-space: nowrap;
+    background: var(--color2);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
     width: 50%;
-    height: 50%;
-    background: black;
+    margin: 0 auto;
+    font-size: 2vh;
+}
+
+.headertext{
+    background: linear-gradient(135deg, var(--color1) 0%, var(--color1) 50%, var(--color2) 50%, var(--color2) 100%);
+    background-size: 300% 300%;
+    background-position: 100% 100%;
+    transition: 0.5s;
+    color: black;
+}
+
+.headertext:hover{
+    background-position: 0% 0%;
+    color: white;
+}
+
+footer{
+    font-size: 4vh;
+    background: white;
+    width: 100%;
+    padding: 1% 1%;
+    color: black;
+    margin: 0 auto;
+    transition: 0.1s;
+}
+
+footer a{
+    color: black;
+}
+
+footer a:hover{
+    cursor: help;
 }

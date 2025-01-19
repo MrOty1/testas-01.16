@@ -1,0 +1,184 @@
+:root{
+    --color1: rgb(0, 195, 255);
+    --color2: rgba(255, 255, 255, 1);
+}
+
+body{
+    font-family: Arial;
+    overflow-x: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.onepage{
+    backdrop-filter: blur(10px);
+    background: url(../images/home/one.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.twopage{
+    backdrop-filter: blur(10px);
+    background: url(../images/home/two.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.threepage{
+    backdrop-filter: blur(10px);
+    background: url(../images/home/three.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.fourpage{
+    backdrop-filter: blur(10px);
+    background: url(../images/home/four.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.fivepage{
+    backdrop-filter: blur(10px);
+    background: url(../images/home/five.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.sixpage{
+    backdrop-filter: blur(10px);
+    background: url(../images/home/six.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.sevenpage{
+    backdrop-filter: blur(10px);
+    background: url(../images/home/seven.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+a{
+    color: white;
+    display: contents;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.maintext{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5vh auto;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 3vh;
+    text-shadow: 0 0 1vh white;
+    color: black;
+}
+
+.text{
+    padding: 2% 2%;
+}
+
+.onepage .img{
+    background: url(../images/home/one.png);
+    background-position: center;
+    background-size: 100% 100%;
+    animation: zoom 1s;
+    transition: 1s;
+}
+
+.twopage .img{
+    background: url(../images/home/two.png);
+    background-position: center;
+    background-size: 100% 100%;
+    animation: zoom 1s;
+    transition: 1s;
+}
+
+.threepage .img{
+    background: url(../images/home/three.png);
+    background-position: center;
+    background-size: 100% 100%;
+    animation: zoom 1s;
+    transition: 1s;
+}
+
+.fourpage .img{
+    background: url(../images/home/four.png);
+    background-position: center;
+    background-size: 100% 100%;
+    animation: zoom 1s;
+    transition: 1s;
+}
+
+.fivepage .img{
+    background: url(../images/home/five.png);
+    background-position: center;
+    background-size: 100% 100%;
+    animation: zoom 1s;
+    transition: 1s;
+}
+
+.sixpage .img{
+    background: url(../images/home/six.png);
+    background-position: center;
+    background-size: 100% 100%;
+    animation: zoom 1s;
+    transition: 1s;
+}
+
+.sevenpage .img{
+    background: url(../images/home/seven.png);
+    background-position: center;
+    background-size: 100% 100%;
+    animation: zoom 1s;
+    transition: 1s;
+}
+
+.img:hover{
+    background-size: 200% 200%;
+}
+
+header{
+    white-space: nowrap;
+    background: var(--color2);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2vh;
+}
+
+.headertext{
+    background: linear-gradient(135deg, var(--color1) 0%, var(--color1) 50%, var(--color2) 50%, var(--color2) 100%);
+    background-size: 300% 300%;
+    background-position: 100% 100%;
+    transition: 0.5s;
+    color: black;
+}
+
+.headertext:hover{
+    background-position: 0% 0%;
+    color: white;
+}
+
+footer{
+    font-size: 4vh;
+    background: white;
+    width: 100%;
+    padding: 1% 1%;
+    color: black;
+    margin: 0 auto;
+    transition: 0.1s;
+}
