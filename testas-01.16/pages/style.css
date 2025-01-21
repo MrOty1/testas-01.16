@@ -11,6 +11,46 @@ body{
     padding: 0;
 }
 
+a{
+    color: white;
+    display: contents;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.maintext{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5vh auto;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 3vh;
+    text-shadow: 0 0 1vh white;
+    color: black;
+}
+
+.text{
+    padding: 2% 2%;
+}
+
+.img{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    transition: 1s;
+}
+
+.img .cell{
+    transition: 1s;
+}
+
+.img a:hover{
+    cursor: all-scroll;
+}
+
+/* PAGE PACKGROUNDS */
+
 .onepage{
     backdrop-filter: blur(10px);
     background: url(../images/home/one.png);
@@ -67,88 +107,96 @@ body{
     background-repeat: no-repeat;
 }
 
-a{
-    color: white;
-    display: contents;
-}
-
-a:hover{
-    text-decoration: none;
-}
-
-.maintext{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 5vh auto;
-    background: rgba(255, 255, 255, 0.5);
-    font-size: 3vh;
-    text-shadow: 0 0 1vh white;
-    color: black;
-}
-
-.text{
-    padding: 2% 2%;
-}
+/* PAGE STUFF AND HOVERING IMAGE */
 
 .onepage .img{
     background: url(../images/home/one.png);
     background-position: center;
     background-size: 100% 100%;
-    animation: zoom 1s;
-    transition: 1s;
 }
 
 .twopage .img{
     background: url(../images/home/two.png);
     background-position: center;
     background-size: 100% 100%;
-    animation: zoom 1s;
-    transition: 1s;
 }
 
 .threepage .img{
     background: url(../images/home/three.png);
     background-position: center;
     background-size: 100% 100%;
-    animation: zoom 1s;
-    transition: 1s;
 }
 
 .fourpage .img{
     background: url(../images/home/four.png);
     background-position: center;
     background-size: 100% 100%;
-    animation: zoom 1s;
-    transition: 1s;
 }
 
 .fivepage .img{
     background: url(../images/home/five.png);
     background-position: center;
     background-size: 100% 100%;
-    animation: zoom 1s;
-    transition: 1s;
 }
 
 .sixpage .img{
     background: url(../images/home/six.png);
     background-position: center;
     background-size: 100% 100%;
-    animation: zoom 1s;
-    transition: 1s;
 }
 
 .sevenpage .img{
     background: url(../images/home/seven.png);
     background-position: center;
     background-size: 100% 100%;
-    animation: zoom 1s;
-    transition: 1s;
 }
 
-.img:hover{
+.img:has(.cell:nth-child(1):hover){
+    background-position: left top;
     background-size: 200% 200%;
 }
+
+.img:has(.cell:nth-child(2):hover){
+    background-position: center top;
+    background-size: 200% 200%;
+}
+
+.img:has(.cell:nth-child(3):hover){
+    background-position: right top;
+    background-size: 200% 200%;
+}
+
+.img:has(.cell:nth-child(4):hover){
+    background-position: left center;
+    background-size: 200% 200%;
+}
+
+.img:has(.cell:nth-child(5):hover){
+    background-position: center center;
+    background-size: 200% 200%;
+}
+
+.img:has(.cell:nth-child(6):hover){
+    background-position: right center;
+    background-size: 200% 200%;
+}
+
+.img:has(.cell:nth-child(7):hover){
+    background-position: left bottom;
+    background-size: 200% 200%;
+}
+
+.img:has(.cell:nth-child(8):hover){
+    background-position: center bottom;
+    background-size: 200% 200%;
+}
+
+.img:has(.cell:nth-child(9):hover){
+    background-position: right bottom;
+    background-size: 200% 200%;
+}
+
+/* HEADER AND FOOTER */
 
 header{
     white-space: nowrap;
@@ -181,4 +229,8 @@ footer{
     color: black;
     margin: 0 auto;
     transition: 0.1s;
+}
+
+a:has(footer:hover){
+    cursor: url(../images/cursor.png), default;
 }

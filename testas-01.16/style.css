@@ -120,10 +120,6 @@ footer{
     transition: 0.1s;
 }
 
-footer a{
-    color: black;
-}
-
-footer a:hover{
-    cursor: help;
+a:has(footer:hover){
+    cursor: url(images/cursor.png), default;
 }
