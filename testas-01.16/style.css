@@ -13,7 +13,6 @@ body{
 }
 
 .mainpage{
-    backdrop-filter: blur(10px);
     background: url(images/background.png);
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -54,6 +53,7 @@ a:hover{
 }
 
 .one{
+    margin-top: 10vh;
     background: url(images/home/one.png);
 }
 
@@ -88,13 +88,13 @@ a:hover{
 }
 
 header{
-    white-space: nowrap;
-    background: var(--color2);
+    position: fixed;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
-    width: 50%;
-    margin: 0 auto;
+    background: var(--color2);
+    width: 100%;
     font-size: 2vh;
+    top: 0;
 }
 
 .headertext{
@@ -111,13 +111,11 @@ header{
 }
 
 footer{
-    font-size: 4vh;
-    background: white;
-    width: 100%;
     padding: 1% 1%;
+    font-size: 6vh;
+    background: white;
     color: black;
-    margin: 0 auto;
-    transition: 0.1s;
+    width: 100%;
 }
 
 a:has(footer:hover){
